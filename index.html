@@ -54,7 +54,7 @@ tailwind.config = { theme: { extend: {
         <span class="w-2.5 h-2.5 rounded-full bg-teal pulse-dot"></span> مفتوح الآن للطوارئ حتى 23:00
       </p>
       <h1 class="mt-5 text-3xl md:text-5xl font-black text-navy leading-tight">
-        أسنانك لا تنتظر،<br>وعيادتنا مفتوحة كل يوم حتى الليل
+        ابتسامتك تبدأ من هنا،<br>ونحن معك كل يوم حتى 23:00
       </h1>
       <p class="mt-5 text-lg text-slate-600 max-w-lg">
         في عيادة بن علي بشراقة نستقبلك أنت وعائلتك 7 أيام على 7، من 08:30 صباحاً إلى 23:00 ليلاً، مع خدمة الطوارئ لآلام الأسنان في أي وقت.
@@ -68,9 +68,49 @@ tailwind.config = { theme: { extend: {
         <a href="#booking" class="inline-flex items-center border-2 border-navy text-navy font-bold px-7 py-3.5 rounded-full hover:bg-navy hover:text-white transition">نموذج الحجز</a>
       </div>
     </div>
-    <div class="relative">
-      <div class="absolute -inset-3 wood rounded-[2rem] rotate-2 opacity-80"></div>
-      <img src="images/reception.jpg" alt="مكتب الاستقبال في عيادة بن علي" class="relative rounded-[2rem] w-full h-[420px] object-cover shadow-xl">
+    <div class="relative mx-auto w-full max-w-sm">
+      <div class="absolute -inset-3 wood rounded-[2.5rem] -rotate-3 opacity-80"></div>
+      <div class="relative bg-white rounded-[2.5rem] shadow-xl p-4">
+        <svg viewBox="0 0 400 420" class="w-full h-auto" role="img" aria-label="شابة مبتسمة داخل شكل سنّ، رمز عيادة بن علي">
+          <defs>
+            <clipPath id="toothClip"><path d="M70 120 C70 50 150 30 200 75 C250 30 330 50 330 120 C330 190 305 230 295 310 C288 365 262 390 245 355 C230 320 225 270 200 270 C175 270 170 320 155 355 C138 390 112 365 105 310 C95 230 70 190 70 120 Z"/></clipPath>
+            <linearGradient id="bgG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e6f6f4"/><stop offset="1" stop-color="#cfeeea"/></linearGradient>
+          </defs>
+          <g clip-path="url(#toothClip)">
+            <rect width="400" height="420" fill="url(#bgG)"/>
+            <!-- hair back -->
+            <path d="M128 150 C128 70 272 70 272 150 C272 200 285 235 295 255 L105 255 C115 235 128 200 128 150 Z" fill="#3b2a25"/>
+            <!-- blouse -->
+            <path d="M92 270 C105 238 160 226 185 220 L215 220 C240 226 295 238 308 270 L335 420 L65 420 Z" fill="#2bb3a3"/>
+            <!-- neck -->
+            <path d="M184 190 H216 V226 L200 250 L184 226 Z" fill="#f0c3a0"/>
+            <path d="M178 222 L200 252 L222 222" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- face -->
+            <ellipse cx="200" cy="145" rx="53" ry="62" fill="#f6d2b0"/>
+            <!-- fringe -->
+            <path d="M144 140 C140 78 262 72 256 140 C244 112 214 100 186 106 C164 111 150 124 144 140 Z" fill="#3b2a25"/>
+            <!-- eyes & brows -->
+            <ellipse cx="178" cy="142" rx="4.500" ry="5.500" fill="#2b1d1a"/><ellipse cx="222" cy="142" rx="4.500" ry="5.500" fill="#2b1d1a"/>
+            <path d="M166 128 Q178 121 190 127 M210 127 Q222 121 234 128" fill="none" stroke="#3b2a25" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="165" cy="164" r="9" fill="#f2a58f" opacity=".5"/><circle cx="235" cy="164" r="9" fill="#f2a58f" opacity=".5"/>
+            <path d="M200 148 Q195 160 202 163" fill="none" stroke="#d9a07e" stroke-width="2.500" stroke-linecap="round"/>
+            <!-- smile with teeth -->
+            <path d="M168 168 Q200 206 232 168 Q200 181 168 168 Z" fill="#fff" stroke="#d1555f" stroke-width="3.500" stroke-linejoin="round"/>
+            <!-- sparkle on tooth -->
+            <path d="M226 176 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z" fill="#fff" stroke="#2bb3a3" stroke-width="1.500" stroke-linejoin="round"/>
+          </g>
+          <!-- tooth frame like the logo -->
+          <path d="M70 120 C70 50 150 30 200 75 C250 30 330 50 330 120 C330 190 305 230 295 310 C288 365 262 390 245 355 C230 320 225 270 200 270 C175 270 170 320 155 355 C138 390 112 365 105 310 C95 230 70 190 70 120 Z" fill="none" stroke="#1f3a7a" stroke-width="10" stroke-linejoin="round"/>
+          <path d="M70 120 C70 50 150 30 200 75 C250 30 330 50 330 120 C330 190 305 230 295 310 C288 365 262 390 245 355 C230 320 225 270 200 270 C175 270 170 320 155 355 C138 390 112 365 105 310 C95 230 70 190 70 120 Z" fill="none" stroke="#2bb3a3" stroke-width="3" stroke-linejoin="round" transform="translate(200 210) scale(.93) translate(-200 -210)"/>
+          <!-- floating sparkles -->
+          <path d="M345 70 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z" fill="#2bb3a3"/>
+          <path d="M52 215 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z" fill="#b99a76"/>
+        </svg>
+        <div class="absolute -bottom-5 -left-3 bg-white rounded-full shadow-lg ring-4 ring-teal-soft w-24 h-24 grid place-items-center">
+          <img src="images/logo.png" alt="شعار العيادة" class="w-16 h-auto">
+        </div>
+        <div class="absolute top-4 right-4 bg-navy text-white text-xs font-bold px-3 py-1.5 rounded-full">مفتوح 7/7</div>
+      </div>
     </div>
   </div>
 </section>
